@@ -1,7 +1,13 @@
+
+plugins {
+}
+
 buildscript {
     repositories {
         google()
-        jcenter()
+        // build error at start, resolved by replace jcenter() with following 2 lines:
+        gradlePluginPortal()
+        mavenCentral()
         maven("https://plugins.gradle.org/m2/")
     }
     dependencies {
@@ -11,6 +17,7 @@ buildscript {
         classpath(ClassPaths.daggerPlugin)
     }
 }
+
 
 tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
