@@ -99,7 +99,8 @@ object Configs {
 
 object Versions {
     internal const val appcompat = "1.2.0"
-    internal const val gradle = "7.0.0-alpha08"
+    // internal const val gradle = "7.0.0-alpha08"
+    internal const val gradle = "8.1.1"
     internal const val coroutines = "1.4.2"
     internal const val materialDesign = "1.3.0"
     internal const val coreKtx = "1.5.0-beta01"
@@ -107,8 +108,8 @@ object Versions {
     internal const val composeActivity = "1.3.0-alpha03"
     internal const val composeConstraint = "1.0.0-alpha03"
     internal const val navigationCompose = "1.0.0-alpha08"
-    internal const val daggerHilt = "2.31-alpha"
-    internal const val daggerHiltAndroid = "1.0.0-alpha03"
+    internal const val daggerHilt = "2.47"
+    internal const val daggerHiltAndroid = "1.0.0"
     internal const val composeViewModel = "1.0.0-alpha01"
     internal const val lifecycle = "2.3.0"
     internal const val eventBus = "3.2.0"

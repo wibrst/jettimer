@@ -15,6 +15,8 @@ buildscript {
         classpath(ClassPaths.kotlinPlugin)
         classpath(ClassPaths.spotlessPlugin)
         classpath(ClassPaths.daggerPlugin)
+        classpath("com.google.dagger:hilt-android-gradle-plugin:4")
+
     }
 }
 
