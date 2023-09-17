@@ -7,13 +7,14 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Configs.compileSdkVersion)
-    buildToolsVersion(Configs.buildToolsVersion)
+    namespace = "com.ericktijerou.jettimer.App"
+    compileSdk =Configs.compileSdkVersion
+    buildToolsVersion = Configs.buildToolsVersion
 
     defaultConfig {
         applicationId = Configs.applicationId
-        minSdkVersion(Configs.minSdkVersion)
-        targetSdkVersion(Configs.targetSdkVersion)
+        minSdk = Configs.minSdkVersion
+        targetSdk = Configs.targetSdkVersion
         versionCode = Configs.versionCode
         versionName = Configs.versionName
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -43,7 +44,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
     }
 
-    packagingOptions {
+    packaging {
         resources.excludes.addAll(listOf("/META-INF/AL2.0", "/META-INF/LGPL2.1"))
     }
 
